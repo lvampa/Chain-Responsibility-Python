@@ -1,5 +1,7 @@
 from __future__ import annotations
+
 from abc import ABC, abstractmethod
+
 
 class Middleware(ABC):
     _successor: Middleware | None = None

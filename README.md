@@ -40,3 +40,17 @@ Or with an activated venv:
 ```bash
 pytest
 ```
+
+### Lint
+
+[Ruff](https://docs.astral.sh/ruff/) is used for linting and formatting all Python files. From the project root:
+
+```bash
+# Check lint and format
+uv run ruff check .
+uv run ruff format --check .
+
+# Auto-fix lint issues and apply formatting
+uv run ruff check . --fix
+uv run ruff format .
+```

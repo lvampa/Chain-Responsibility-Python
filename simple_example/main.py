@@ -1,6 +1,7 @@
 from first_middleware import FirstMiddleware
-from middle_middleware import MiddleMiddleware
 from last_middleware import LastMiddleware
+from middle_middleware import MiddleMiddleware
+
 
 def main(request: int) -> str | None:
     first = FirstMiddleware()
@@ -9,6 +10,7 @@ def main(request: int) -> str | None:
     first.set_successor(middle).set_successor(last)
 
     return first.handle(request)
+
 
 print(main(1))
 print(main(5))

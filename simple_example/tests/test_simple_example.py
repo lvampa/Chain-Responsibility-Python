@@ -1,7 +1,8 @@
 """Basic tests for the chain-of-responsibility example."""
+
 from first_middleware import FirstMiddleware
-from middle_middleware import MiddleMiddleware
 from last_middleware import LastMiddleware
+from middle_middleware import MiddleMiddleware
 
 
 def build_chain():
